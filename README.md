@@ -18,3 +18,10 @@ node index.js
 
 For testing locally, create an .env file inside the product-catalog-api folder, and place the key value pair (requested via my email) inside.
 This is for the connection string to Neon database.
+
+
+## Libraries/Frameworks Used:
+- express
+- Postgres
+- Dotenv
+- Neon database
