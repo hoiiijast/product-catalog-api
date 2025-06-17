@@ -1,4 +1,4 @@
-# 📦 Project Title
+# 📦 Product catalog API
 
 Wep API for the web catalog app
 
