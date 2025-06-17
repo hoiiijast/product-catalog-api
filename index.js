@@ -3,10 +3,9 @@ import express from "express";
 import cors from "cors";
 import { neon } from "@neondatabase/serverless";
 
-const sql = neon(process.env.DATABASE_URL);
-
 const app = express();
-const port = 3001;
+const sql = neon(process.env.DATABASE_URL);
+const PORT = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json());
@@ -60,6 +59,6 @@ app.delete("/api/products/:id", async (req, res) => {
   res.json({ message: "Product deleted" });
 });
 
-app.listen(port, () => {
-  console.log(`Product API server running at http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`Product API server running at ${PORT}`);
 });
